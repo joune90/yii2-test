@@ -1,0 +1,17 @@
+{
+    "name": "joune90/yii2-test",
+    "authors": [
+        {
+            "name": "joune90",
+            "email": "67150798@qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "joune90\\test\\": "src/"
+        }
+    }
+}
