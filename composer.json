@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "joune90\\test\\": "src"
+            "joune90\\test\\": ""
         }
     }
 }
