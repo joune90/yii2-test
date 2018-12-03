@@ -1,14 +1,13 @@
 <?php
-namespace joune90\test;
 /**
  * Created by PhpStorm.
  * User: Administrator
  * Date: 2018/12/3
- * Time: 15:24
+ * Time: 15:59
  */
+namespace joune\test;
 use yii\base\Component;
-
-class Test extends Component
+class Ceshi extends Component
 {
     private $aipNFace = null;
     public $access_key = '';
@@ -20,19 +19,6 @@ class Test extends Component
             $this->aipNFace = new AipNFace($this->access_key, $this->secret_key);
         }
         return $this->aipNFace;
-    }
-
-    //获取分组
-    public function GetGroup($start = 0, $num = 1)
-    {
-        $this->getAipHandler();
-        return $this->aipNFace->GetGroup($start, $num);
-    }
-
-    //获取分组下的所有用户
-    public function GetGroupUsers($groupId)
-    {
-        return $this->aipNFace->GetGroupUsers($groupId);
     }
 
 }
